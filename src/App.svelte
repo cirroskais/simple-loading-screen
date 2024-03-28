@@ -9,7 +9,7 @@
     <div in:scale class="h-screen w-screen">
         <div class="h-full w-full flex justify-center items-center absolute opacity-50 blur-sm">
             <!-- svelte-ignore a11y-media-has-caption -->
-            <video src="garf.mp4" autoplay loop muted></video>
+            <video src="garf.mp4" autoplay loop volume={$gameDetails?.volume}></video>
         </div>
         <div class="h-full w-full flex justify-center items-center relative z-10">
             <div class="w-[42rem] grid grid-cols-3 gap-2">
