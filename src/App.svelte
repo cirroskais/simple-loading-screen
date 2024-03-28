@@ -4,14 +4,17 @@
 
     import { gameDetails } from "./lib/events";
 
-    let volume = $gameDetails?.volume || 0.01;
+    let volume = 0.05;
 </script>
 
 {#if $gameDetails}
     <div in:scale class="h-screen w-screen">
         <div class="h-full w-full flex justify-center items-center absolute blur-sm">
-            <!-- svelte-ignore a11y-media-has-caption -->
-            <!-- <img class="w-[48rem] h-[48rem]" src="cover.webp" alt="" /> -->
+            <img
+                class="h-screen w-screen"
+                src="https://files.madhouselabs.net/classics%2C%20rarities%2C%20and%20abominations/image/gmod/unr/g10.jpg"
+                alt=""
+            />
             <audio src="is there a point (girl u know).mp3" autoplay loop bind:volume></audio>
         </div>
         <div class="h-full w-full flex justify-center items-center relative z-10">
@@ -25,7 +28,7 @@
                         <div class="animate-spin my-auto">
                             <Disc3 />
                         </div>
-                        <p class="italic font-bold my-auto">Listening to:</p>
+                        <p class="font-bold my-auto">Listening to:</p>
                         <p class="my-auto">EVABOY - is there a point (girl u know)</p>
                     </div>
                 </div>
