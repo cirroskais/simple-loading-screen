@@ -1,15 +1,15 @@
 <script>
+    import { scale } from "svelte/transition";
     import { Map, Gamepad2, Disc3 } from "lucide-svelte";
 
     import { gameDetails } from "./lib/events";
-    import { scale } from "svelte/transition";
 </script>
 
 {#if $gameDetails}
     <div in:scale class="h-screen w-screen">
         <div class="h-full w-full flex justify-center items-center absolute opacity-50 blur-sm">
             <!-- svelte-ignore a11y-media-has-caption -->
-            <video src="garf.mp4" autoplay loop volume={$gameDetails?.volume}></video>
+            <audio src="is there a point (girl u know).mp3" autoplay={true} loop={true} volume={$gameDetails?.volume}></audio>
         </div>
         <div class="h-full w-full flex justify-center items-center relative z-10">
             <div class="w-[42rem] grid grid-cols-3 gap-2">
@@ -23,7 +23,7 @@
                             <Disc3 />
                         </div>
                         <p class="italic font-bold">Listening to:</p>
-                        <p>garf.mp4</p>
+                        <p>EVABOY - is there a point (girl u know)</p>
                     </div>
                 </div>
                 <div class="bg-black/65 col-span-1 p-2 rounded-lg shadow-lg">
