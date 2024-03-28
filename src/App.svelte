@@ -4,9 +4,7 @@
 
     import { gameDetails } from "./lib/events";
 
-    let volume = $gameDetails?.volume || 0;
-
-    gameDetails.set(true);
+    let volume = $gameDetails?.volume || 0.01;
 </script>
 
 {#if $gameDetails}
@@ -24,11 +22,11 @@
                 </div>
                 <div class="bg-black/65 col-span-2 p-2 rounded-lg shadow-lg flex">
                     <div class="flex my-auto space-x-2">
-                        <div class="animate-spin">
+                        <div class="animate-spin my-auto">
                             <Disc3 />
                         </div>
-                        <p class="italic font-bold">Listening to:</p>
-                        <p>EVABOY - is there a point (girl u know)</p>
+                        <p class="italic font-bold my-auto">Listening to:</p>
+                        <p class="my-auto">EVABOY - is there a point (girl u know)</p>
                     </div>
                 </div>
                 <div class="bg-black/65 col-span-1 p-2 rounded-lg shadow-lg">
