@@ -4,6 +4,7 @@
     "playlist": [
         { "title": "MF DOOM - Rapp Snitch Knishes", "location": "/audio/Rapp Snitch Knishes.mp3" },
         { "title": "Modjo - Lady (Hear Me Tonight)", "location": "/audio/Lady.mp3" },
-        { "title": "EVABOY - is there a point (girl u know)", "location": "/audio/is there a point (girl u know).mp3" }
+        { "title": "EVABOY - is there a point (girl u know)", "location": "/audio/is there a point (girl u know).mp3" },
+	{ "title": "snuffles - SPOTS", "location": "/audio/SPOTS.mp3" }
     ]
 }
