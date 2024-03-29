@@ -3,15 +3,18 @@
     import { Map, Gamepad2, Disc3 } from "lucide-svelte";
 
     import { gameDetails } from "./lib/events";
+    import Slideshow from "./lib/Slideshow.svelte";
+    import Playlist from "./lib/Playlist.svelte";
+    import { writable } from "svelte/store";
 
-    let volume = 0.05;
+    let title = writable();
 </script>
 
 {#if $gameDetails}
     <div in:scale class="h-screen w-screen">
         <div class="h-full w-full flex justify-center items-center absolute blur-sm">
-            <img class="h-screen w-screen" src="/cover.jpg" alt="" />
-            <audio src="/is there a point (girl u know).mp3" autoplay loop bind:volume></audio>
+            <Slideshow />
+            <Playlist {title} />
         </div>
         <div class="h-full w-full flex justify-center items-center relative z-10">
             <div class="w-[42rem] grid grid-cols-3 gap-2">
@@ -25,7 +28,7 @@
                             <Disc3 />
                         </div>
                         <p class="font-bold my-auto">Listening to:</p>
-                        <p class="my-auto">EVABOY - is there a point (girl u know)</p>
+                        <p class="my-auto">{$title}</p>
                     </div>
                 </div>
                 <div class="bg-black/65 col-span-1 p-2 rounded-lg shadow-lg">
