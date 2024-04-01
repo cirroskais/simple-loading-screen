@@ -33,7 +33,7 @@
                         <div class="animate-spin my-auto">
                             <Disc3 />
                         </div>
-                        <span class="flex-1 my-auto whitespace-nowrap overflow-hidden">{$title}</span>
+                        <span class="flex-1 my-auto whitespace-nowrap overflow-hidden font-bold">{$title}</span>
                     </div>
                 </div>
                 <div class="bg-black/65 col-span-1 p-2 rounded-lg shadow-lg">
