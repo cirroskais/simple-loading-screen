@@ -28,13 +28,12 @@
                     <p class="text-center text-white/50">You're joining</p>
                     <p class="text-center text-2xl">{$gameDetails?.servername}</p>
                 </div>
-                <div class="bg-black/65 col-span-2 p-2 rounded-lg shadow-lg flex">
+                <div class="bg-black/65 col-span-2 p-2 rounded-lg shadow-lg flex overflow-hidden">
                     <div class="flex my-auto space-x-2">
                         <div class="animate-spin my-auto">
                             <Disc3 />
                         </div>
-                        <p class="font-bold my-auto w-max">Listening to:</p>
-                        <p class="my-auto overflow-hidden whitespace-nowrap">{$title}</p>
+                        <span class="flex-1 my-auto whitespace-nowrap overflow-hidden">{$title}</span>
                     </div>
                 </div>
                 <div class="bg-black/65 col-span-1 p-2 rounded-lg shadow-lg">
