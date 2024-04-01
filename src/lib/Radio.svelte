@@ -16,7 +16,7 @@
             : body.icestats.source;
 
         title.set(`${data.artist} - ${data.title}`);
-    }, 1000 * 5);
+    }, 1000 * 15);
 
     async function main() {
         const response = await fetch(radio + "/status-json.xsl");
