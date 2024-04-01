@@ -33,8 +33,8 @@
                         <div class="animate-spin my-auto">
                             <Disc3 />
                         </div>
-                        <p class="font-bold my-auto">Listening to:</p>
-                        <p class="my-auto">{$title}</p>
+                        <p class="font-bold my-auto w-max">Listening to:</p>
+                        <p class="my-auto overflow-hidden whitespace-nowrap">{$title}</p>
                     </div>
                 </div>
                 <div class="bg-black/65 col-span-1 p-2 rounded-lg shadow-lg">
