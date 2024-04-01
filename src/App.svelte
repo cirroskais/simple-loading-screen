@@ -1,11 +1,13 @@
 <script>
     import { scale } from "svelte/transition";
     import { Map, Gamepad2, Disc3 } from "lucide-svelte";
+    import { writable } from "svelte/store";
+    import { audioMethod } from "./config.json";
 
     import { gameDetails } from "./lib/events";
     import Slideshow from "./lib/Slideshow.svelte";
     import Playlist from "./lib/Playlist.svelte";
-    import { writable } from "svelte/store";
+    import Radio from "./lib/Radio.svelte";
 
     let title = writable();
 </script>
@@ -14,7 +16,11 @@
     <div in:scale class="h-screen w-screen">
         <div class="h-full w-full flex justify-center items-center absolute blur-sm">
             <Slideshow />
-            <Playlist {title} />
+            {#if audioMethod === "playlist"}
+                <Playlist {title} />
+            {:else if audioMethod === "radio"}
+                <Radio {title} />
+            {/if}
         </div>
         <div class="h-full w-full flex justify-center items-center relative z-10">
             <div class="w-[42rem] grid grid-cols-3 gap-2">

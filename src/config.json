@@ -1,10 +1,16 @@
 {
     "imageDuration": 10,
     "images": ["/img/1.jpg", "/img/2.jpg", "/img/3.jpg", "/img/4.jpg", "/img/5.jpg", "/img/6.jpg", "/img/7.jpg", "/img/8.jpg"],
+
+    "audioMethod": "radio",
+
+    "radio": "https://noise.madhouselabs.net",
+    "radioServerName": "dope",
+
     "playlist": [
         { "title": "MF DOOM - Rapp Snitch Knishes", "location": "/audio/Rapp Snitch Knishes.mp3" },
         { "title": "Modjo - Lady (Hear Me Tonight)", "location": "/audio/Lady.mp3" },
         { "title": "EVABOY - is there a point (girl u know)", "location": "/audio/is there a point (girl u know).mp3" },
-	{ "title": "snuffles - SPOTS", "location": "/audio/SPOTS.mp3" }
+        { "title": "snuffles - SPOTS", "location": "/audio/SPOTS.mp3" }
     ]
 }

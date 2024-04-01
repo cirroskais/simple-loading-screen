@@ -1,11 +1,10 @@
 <script>
     import { playlist } from "../config.json";
 
+    export let title;
     let index = Math.floor(Math.random() * playlist.length),
         selected = playlist[index],
         volume = 0.05;
-
-    export let title;
 
     title.set(selected.title);
 
