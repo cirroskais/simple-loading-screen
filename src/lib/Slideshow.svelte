@@ -1,5 +1,5 @@
 <script>
-    import { slide } from "svelte/transition";
+    import { fade, slide } from "svelte/transition";
     import { images, imageDuration } from "../config.json";
 
     let index = Math.floor(Math.random() * images.length),
@@ -20,6 +20,6 @@
 
 {#each images as image}
     {#if selected === image}
-        <img in:slide={{ axis: "x" }} out:slide={{ axis: "x" }} class="max-h-screen" src={image} alt="" />
+        <img transition:fade class="absolute max-h-screen" src={image} alt="" />
     {/if}
 {/each}
