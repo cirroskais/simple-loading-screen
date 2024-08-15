@@ -21,6 +21,8 @@
     "playlist": [
         { "title": "MF DOOM - Rapp Snitch Knishes", "location": "/audio/Rapp Snitch Knishes.mp3" },
         { "title": "Modjo - Lady (Hear Me Tonight)", "location": "/audio/Lady.mp3" },
-        { "title": "EVABOY - is there a point (girl u know)", "location": "/audio/is there a point (girl u know).mp3" }
+        { "title": "King Geedorah - Lockjaw", "location": "/audio/Lockjaw.mp3" },
+        { "title": "OutKast - Ms. Jackson", "location": "/audio/Ms Jackson.mp3" },
+        { "title": "2 Mello - I Wanna Kno", "location": "/audio/I Wanna Kno.mp3" }
     ]
 }
