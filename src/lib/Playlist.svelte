@@ -4,7 +4,7 @@
     export let title;
     let index = Math.floor(Math.random() * playlist.length),
         selected = playlist[index],
-        volume = 0.05;
+        volume = 0.025;
 
     title.set(selected.title);
 
