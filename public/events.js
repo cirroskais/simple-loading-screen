@@ -60,4 +60,4 @@ function SetFilesNeeded(needed) {
     );
 }
 
-GameDetails("cirro's sandbox / FASTDL WIRE PAC3 ARC9 LVS", null, "gm_construct", null, null, "sandbox", null, null, null);
+// GameDetails("cirro's sandbox / FASTDL WIRE PAC3 ARC9 LVS", null, "gm_construct", null, null, "sandbox", null, null, null);
