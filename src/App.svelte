@@ -34,11 +34,11 @@
                         </div>
                     </div>
                     <div class="p-2 rounded-lg shadow-lg bg-black/70">
-                        <div class="flex space-x-2">
+                        <div class="flex space-x-1">
                             <Map />
                             <p class="font-bold">{$gameDetails?.mapname}</p>
                         </div>
-                        <div class="flex space-x-2">
+                        <div class="flex space-x-1">
                             <Gamepad2 />
                             <p class="font-bold">{$gameDetails?.gamemode}</p>
                         </div>
