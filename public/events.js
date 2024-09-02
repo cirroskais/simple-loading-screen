@@ -39,3 +39,25 @@ function SetStatusChanged(status) {
         })
     );
 }
+
+function SetFilesTotal(total) {
+    element.dispatchEvent(
+        new CustomEvent("setFilesTotal", {
+            detail: {
+                total,
+            },
+        })
+    );
+}
+
+function SetFilesNeeded(needed) {
+    element.dispatchEvent(
+        new CustomEvent("setFilesNeeded", {
+            detail: {
+                needed,
+            },
+        })
+    );
+}
+
+GameDetails("cirro's sandbox / FASTDL WIRE PAC3 ARC9 LVS", null, "gm_construct", null, null, "sandbox", null, null, null);

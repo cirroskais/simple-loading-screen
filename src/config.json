@@ -1,28 +1,13 @@
 {
     "imageDuration": 10,
-    "images": [
-        "/img/1.jpg",
-        "/img/2.jpg",
-        "/img/3.jpg",
-        "/img/4.jpg",
-        "/img/5.jpg",
-        "/img/6.jpg",
-        "/img/7.jpg",
-        "/img/8.jpg",
-        "/img/9.jpg",
-        "/img/10.jpg"
-    ],
-
-    "audioMethod": "playlist",
-
-    "radio": "https://noise.madhouselabs.net",
-    "radioServerName": "dope",
-
-    "playlist": [
-        { "title": "MF DOOM - Rapp Snitch Knishes", "location": "/audio/Rapp Snitch Knishes.mp3" },
-        { "title": "Modjo - Lady (Hear Me Tonight)", "location": "/audio/Lady.mp3" },
-        { "title": "King Geedorah - Lockjaw", "location": "/audio/Lockjaw.mp3" },
-        { "title": "OutKast - Ms. Jackson", "location": "/audio/Ms Jackson.mp3" },
-        { "title": "2 Mello - I Wanna Kno", "location": "/audio/I Wanna Kno.mp3" }
+    "images": ["/img/4.jpg", "/img/5.jpg", "/img/6.jpg", "/img/8.jpg", "/img/9.jpg", "/img/10.jpg", "/img/11.jpg"],
+    "staff": [
+        { "steamid": "76561198824911329", "color": "#c4bef3" },
+        { "steamid": "76561198112219274", "color": "#e21884", "_comment": "lilyith" },
+        { "steamid": "76561198107316900", "color": "#e21884", "_comment": "alexcat" },
+        { "steamid": "76561198101686025", "color": "#ffe23f", "_comment": "bluddfang" },
+        { "steamid": "76561198271335686", "color": "#ffe23f", "_comment": "shelby" },
+        { "steamid": "76561198196375903", "color": "#ffe23f", "_comment": "westernspy" },
+        { "steamid": "76561198277445333", "color": "#ffe23f", "_comment": "crate" }
     ]
 }

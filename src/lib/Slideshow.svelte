@@ -1,6 +1,6 @@
 <script>
     import { fade, slide } from "svelte/transition";
-    import { images, imageDuration } from "../config.json";
+    import { images, imageDuration } from "../config";
 
     let index = Math.floor(Math.random() * images.length),
         selected = images[index];
@@ -20,6 +20,6 @@
 
 {#each images as image}
     {#if selected === image}
-        <img transition:fade class="absolute max-h-screen" src={image} alt="" />
+        <img transition:fade class="object-cover absolute w-screen h-screen" src={image} alt="" />
     {/if}
 {/each}
