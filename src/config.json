@@ -1,6 +1,16 @@
 {
     "imageDuration": 10,
-    "images": ["/img/4.jpg", "/img/5.jpg", "/img/6.jpg", "/img/8.jpg", "/img/9.jpg", "/img/10.jpg", "/img/11.jpg"],
+    "images": [
+        "/img/2.jpg",
+        "/img/3.jpg",
+        "/img/4.jpg",
+        "/img/5.jpg",
+        "/img/6.jpg",
+        "/img/8.jpg",
+        "/img/9.jpg",
+        "/img/10.jpg",
+        "/img/11.jpg"
+    ],
     "staff": [
         { "steamid": "76561198824911329", "color": "#c4bef3" },
         { "steamid": "76561198112219274", "color": "#e21884", "_comment": "lilyith" },
