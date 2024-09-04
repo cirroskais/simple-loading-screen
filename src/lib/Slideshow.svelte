@@ -1,6 +1,6 @@
 <script>
-    import { fade, slide } from "svelte/transition";
-    import { images, imageDuration } from "../config";
+    import { fade } from "svelte/transition";
+    import { images, imageDuration } from "../config.json";
 
     let index = Math.floor(Math.random() * images.length),
         selected = images[index];
