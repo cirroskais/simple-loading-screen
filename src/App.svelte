@@ -1,6 +1,7 @@
 <script>
     import { scale } from "svelte/transition";
-    import { Map, Gamepad2 } from "lucide-svelte";
+    import Map from "lucide-svelte/icons/map";
+    import Gamepad2 from "lucide-svelte/icons/gamepad-2";
     import { staff } from "./config.json";
     import { gameDetails, downloadingFile, statusChanged } from "./lib/events";
     import Slideshow from "./lib/Slideshow.svelte";
