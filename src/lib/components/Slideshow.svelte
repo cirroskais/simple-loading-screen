@@ -1,24 +1,24 @@
 <script>
     import { fade } from "svelte/transition";
-    import { images, imageDuration } from "../config.json";
+    import config from "../config";
 
-    let index = Math.floor(Math.random() * images.length),
-        selected = images[index];
+    let index = Math.floor(Math.random() * config.images.length),
+        selected = config.images[index];
 
     setInterval(function changeImage() {
         index++;
-        if (index >= images.length) index = 0;
-        selected = images[index];
-    }, 1000 * imageDuration);
+        if (index >= config.images.length) index = 0;
+        selected = config.images[index];
+    }, 1000 * config.imageDuration);
 </script>
 
 <svelte:head>
-    {#each images as image}
+    {#each config.images as image}
         <link rel="preload" as="image" href={image} />
     {/each}
 </svelte:head>
 
-{#each images as image}
+{#each config.images as image}
     {#if selected === image}
         <img transition:fade class="object-cover absolute w-screen h-screen" src={image} alt="" />
     {/if}
